@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,13 +18,13 @@ use App\Http\Controllers\HomeController;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/', [PageController::class, 'home'])->name('home');
+Route::get('/about', [PageController::class, 'about'])->name('about');
+Route::get('/services', [PageController::class, 'services'])->name('services');
+Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 
-
-
-
-Route::get('/', [HomeController::class, 'index']);
-
-// Route::get('/', [HomeController::class, 'index'])->name('home');
-
+Route::post('/send-message', function () {
+    return redirect()->back()->with('success', 'Message sent successfully!');
+})->name('send.message');
 
 

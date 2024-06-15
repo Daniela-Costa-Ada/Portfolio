@@ -1,0 +1,134 @@
+/* resources/css/home.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.intro {
+    margin-bottom: 30px;
+}
+
+.intro p {
+    font-size: 1.3em;
+    text-align: center;
+    color: #555;
+    line-height: 1.6;
+}
+
+.projects {
+    margin-bottom: 40px;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.project p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+.skills {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.skills h2 {
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.skills ul li {
+    background-color: #e0e0e0;
+    padding: 12px 18px;
+    border-radius: 12px;
+    color: #333;
+    font-weight: bold;
+}
+
+.social-links {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.social-links h2 {
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.social-links ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.social-links ul li {
+    background: linear-gradient(135deg, #4CAF50, #2196F3);
+    padding: 12px 22px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.social-links ul li:hover {
+    transform: translateY(-3px);
+}

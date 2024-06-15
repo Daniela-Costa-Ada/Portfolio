@@ -1,0 +1,60 @@
+/* resources/css/contact-form.css */
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    resize: vertical; /* Permite redimensionamento vertical */
+    min-height: 100px; /* Altura mínima da textarea */
+}
+
+.contact-form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}
