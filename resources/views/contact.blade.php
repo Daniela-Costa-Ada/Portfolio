@@ -5,18 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    @vite(['resources/css/menu.css', 'resources/css/contact.css', 'resources/css/contact-form.css', 'resources/css/social-links.css'])
+    @vite(['resources/css/menu.css', 'resources/css/contact.css', 'resources/css/contact-form.css', 'resources/css/social-links.css', 'resources/css/contact-information.css'])
 </head>
 <body>
     @include('components/menu')
     <div class="contact-container">
-        <h1>Contact Information</h1>
-        <div class="contact-details">
-            <h2>Daniela Costa</h2>
-            <p>Software Developer</p>
-            <p>Email: siedanipereira@gmail.com</p>
-            <p>Phone: (31) 996973422</p>
-        </div>
+        <x-contact-information />
         <section class="contact-form">
             <h2>Contact Form</h2>
             <!-- Inclui o componente ContactForm -->
