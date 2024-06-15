@@ -1,10 +1,7 @@
 // resources/js/contact-information.js
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Selecione o elemento que contém as informações de contato
-    const contactInfo = document.querySelector('.contact-information');
-
-    // Adicione um evento de clique para mostrar/ocultar as informações detalhadas
+document.addEventListener('DOMContentLoaded', function() {    
+    const contactInfo = document.querySelector('.contact-information');    
     contactInfo.addEventListener('click', function() {
         const contactDetails = this.querySelector('.contact-details');
         contactDetails.classList.toggle('show-details');

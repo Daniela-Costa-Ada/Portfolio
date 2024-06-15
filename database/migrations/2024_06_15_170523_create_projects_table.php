@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('description');
-            $table->string('url'); // Corrigido de $table->url('description') para $table->string('url')
+            $table->string('url');
             $table->timestamps();
         });
         

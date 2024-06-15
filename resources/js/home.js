@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     socialLinks.forEach(link => {
         link.addEventListener('click', function(event) {
-            event.preventDefault(); // Evita que o link abra diretamente
-            window.open(this.href, '_blank'); // Abre o link em uma nova aba
+            event.preventDefault();
+            window.open(this.href, '_blank');
         });
     });
 });

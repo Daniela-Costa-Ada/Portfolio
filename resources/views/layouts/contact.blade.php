@@ -13,7 +13,6 @@
         <x-contact-information />
         <section class="contact-form">
             <h2>Contact Form</h2>
-            <!-- Inclui o componente ContactForm -->
             <x-contact-form />
         </section>
         <div class="skills">

@@ -1,7 +1,5 @@
 /* resources/css/home.css */
 
-/* Restante do seu CSS existente */
-
 .social-links {
     margin-bottom: 40px;
     text-align: center;
@@ -11,7 +9,7 @@
     color: #333;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 20px; /* Adicionando um espaçamento abaixo do título */
+    margin-bottom: 20px; 
 }
 
 .social-links ul {
@@ -28,17 +26,16 @@
     border-radius: 12px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
-    cursor: pointer; /* Alterando o cursor para indicar que os links são clicáveis */
-}
+    cursor: pointer; 
 
 .social-links ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 1em; /* Tamanho da fonte dos links */
+    font-size: 1em; 
 }
 
 .social-links ul li:hover {
     transform: translateY(-3px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Aumentando a sombra ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }

@@ -41,20 +41,20 @@
 }
 
 .contact-form textarea {
-    resize: vertical; /* Permite redimensionamento vertical */
-    min-height: 100px; /* Altura mínima da textarea */
+    resize: vertical; 
+    min-height: 100px; 
 }
 
 .contact-form button[type="submit"] {
     padding: 10px 20px;
-    background-color: #007bff; /* Cor de fundo do botão */
+    background-color: #007bff; 
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+    transition: background-color 0.3s ease; 
 }
 
 .contact-form button[type="submit"]:hover {
-    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+    background-color: #0056b3; 
 }
