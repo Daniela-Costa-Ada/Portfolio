@@ -1,18 +1,12 @@
 // resources/js/home.js
 
 document.addEventListener('DOMContentLoaded', function() {
-    const projectElements = document.querySelectorAll('.project');
-    const messageContainer = document.getElementById('message-container');
+    const socialLinks = document.querySelectorAll('.social-links a');
 
-    projectElements.forEach(project => {
-        project.addEventListener('click', function() {
-            const url = this.getAttribute('data-url');
-            if (url) {
-                window.open(url, '_blank', 'noopener,noreferrer');
-            } else {
-                const projectTitle = this.querySelector('h3').textContent;
-                messageContainer.textContent = `You clicked on ${projectTitle}`;
-            }
+    socialLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); // Evita que o link abra diretamente
+            window.open(this.href, '_blank'); // Abre o link em uma nova aba
         });
     });
 });

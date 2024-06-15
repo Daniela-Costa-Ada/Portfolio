@@ -1,0 +1,44 @@
+/* resources/css/home.css */
+
+/* Restante do seu CSS existente */
+
+.social-links {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.social-links h2 {
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px; /* Adicionando um espaçamento abaixo do título */
+}
+
+.social-links ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.social-links ul li {
+    background: linear-gradient(135deg, #4CAF50, #2196F3);
+    padding: 12px 22px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer; /* Alterando o cursor para indicar que os links são clicáveis */
+}
+
+.social-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1em; /* Tamanho da fonte dos links */
+}
+
+.social-links ul li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Aumentando a sombra ao passar o mouse */
+}
