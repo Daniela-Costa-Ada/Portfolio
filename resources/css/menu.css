@@ -3,19 +3,21 @@
 .menu {
     display: flex;
     justify-content: flex-end; /* Alinha os itens à direita */
-    background-color: #333;
+    background-color: #7e7575; /* Cor de fundo mais escura */
     padding: 10px 20px; /* Adiciona um espaçamento interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
 .menu a {
-    padding: 14px 20px;
-    display: block;
-    color: white;
-    text-align: center;
+    padding: 10px 15px; /* Reduz o espaçamento interno */
+    margin-left: 10px; /* Espaçamento entre os links */
+    color: #ddd; /* Cor do texto mais clara */
     text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
 }
 
 .menu a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #444; /* Cor de fundo mais escura no hover */
+    color: #fff; /* Cor do texto mais clara no hover */
+    border-radius: 8px; /* Borda arredondada no hover */
 }
