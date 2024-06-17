@@ -8,18 +8,18 @@ use App\Models\Project as ProjectModel;
 class Project extends Component
 {
     public $projectId;
-    public $project;
+    public $projects;
 
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($projectId)
+    public function __construct()
     {
-       
-        $this->project = ProjectModel::find($projectId);
+        $this->projects = ProjectModel::all();
     }
+    
 
     /**
      * Get the view / contents that represent the component.
@@ -28,6 +28,9 @@ class Project extends Component
      */
     public function render()
     {
-        return view('components.project');
+        return view('components.project', [
+            'projects' => $this->projects,
+        ]);
     }
+    
 }

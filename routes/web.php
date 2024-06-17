@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PageController;
-
+use App\Http\Controllers\ProjectController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,3 +28,9 @@ Route::post('/send-message', function () {
 })->name('send.message');
 
 
+
+Route::get('api/projects', [ProjectController::class, 'index']);
+Route::post('api/projects', [ProjectController::class, 'store']);
+Route::get('api/projects/{id}', [ProjectController::class, 'show']);
+Route::put('api/projects/{id}', [ProjectController::class, 'update']);
+Route::delete('api/projects/{id}', [ProjectController::class, 'destroy']);

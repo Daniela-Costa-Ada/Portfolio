@@ -1,12 +1,18 @@
-// resources/js/menu.js
+document.addEventListener('DOMContentLoaded', function () {
+    const menu = document.querySelector('.menu');
+    const menuOffset = menu.offsetTop;
+    const bodyPaddingTop = parseInt(window.getComputedStyle(document.body).getPropertyValue('padding-top'));
 
-document.addEventListener('DOMContentLoaded', function() {
-    const menuItems = document.querySelectorAll('.menu a');
-    menuItems.forEach(item => {
-        item.addEventListener('click', function(event) {
-            event.preventDefault();
-            const url = this.href;
-            window.location.href = url;
-        });
-    });
+
+    function handleScroll() {
+        if (window.pageYOffset > menuOffset) {
+            document.body.style.paddingTop = `${menu.offsetHeight}px`;
+            menu.classList.add('sticky');
+        } else {
+            document.body.style.paddingTop = `${bodyPaddingTop}px`;
+            menu.classList.remove('sticky');
+        }
+    }
+
+    window.addEventListener('scroll', handleScroll);
 });

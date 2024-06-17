@@ -10,7 +10,9 @@
 </head>
 
 <body>
-    <x-menu />
+    <section class="menu">
+        <x-menu />
+    </section>
     <div class="container">
         <section class="intro">
             <h1>Welcome to My Portfolio</h1>
@@ -18,9 +20,10 @@
             <p>Hello! I'm Daniela Costa, a passionate software developer with experience in building web applications.
                 Feel free to explore my projects and learn more about my skills.</p>
         </section>
-        <x-project :project-id="1"></x-project>
-        <x-project :project-id="2"></x-project>
-        <x-project :project-id="3"></x-project>
+        <section class="projects">
+            <x-project/>
+           
+        </section>
         <section class="skills">
             <h2>Skills</h2>
             <ul>

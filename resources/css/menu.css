@@ -1,23 +1,36 @@
-/* resources/css/menu.css */
+body {
+    padding-top: 70px; 
+}
 
 .menu {
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
+    background-color: #7e7575;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.menu.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
     background-color: #7e7575; 
-    padding: 10px 20px; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
 }
 
 .menu a {
-    padding: 10px 15px; 
-    margin-left: 10px; 
-    color: #ddd; 
+    padding: 10px 15px;
+    margin-left: 10px;
+    color: #ddd;
     text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease; 
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .menu a:hover {
-    background-color: #444; 
-    color: #fff; 
-    border-radius: 8px; 
+    background-color: #444;
+    color: #fff;
+    border-radius: 8px;
 }
