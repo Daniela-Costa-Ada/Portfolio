@@ -1,0 +1,36 @@
+.menu {
+    display: flex;
+    /* justify-content: flex-end; */
+    background: linear-gradient(135deg, #3498db, #2ecc71);
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+}
+
+.menu a {
+    padding: 10px 15px;
+    margin-left: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.menu a:hover {
+    background: #2980b9;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.menu.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+    background: linear-gradient(135deg, #3498db, #2ecc71);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+}
+
+body.menu-sticky-padding {
+    padding-top: 70px; /* Espaçamento para compensar o menu fixo */
+}
