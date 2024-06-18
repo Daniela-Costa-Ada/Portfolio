@@ -14,10 +14,9 @@ class ProjectSeeder extends Seeder
      */
     public function run()
     {
-        // Limpar registros existentes
+        
         Project::truncate();
-
-        // Criar projetos fictícios
+        
         Project::create([
             'title' => 'Projeto A',
             'description' => 'Descrição do Projeto A',
@@ -35,8 +34,6 @@ class ProjectSeeder extends Seeder
             'description' => 'Descrição do Projeto C',
             'url' => 'https://www.projeto-c.com',
         ]);
-
-        // Criar mais projetos se necessário...
 
         $this->command->info('Projetos inseridos com sucesso!');
     }

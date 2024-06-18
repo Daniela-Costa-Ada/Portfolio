@@ -10,9 +10,7 @@
 </head>
 
 <body>
-    <section class="menu">
-        <x-menu />
-    </section>
+    @include('components/menu')    
     <div class="container">
         <section class="intro">
             <h1>Welcome to My Portfolio</h1>

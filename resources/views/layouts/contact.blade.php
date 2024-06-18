@@ -15,7 +15,7 @@
             <h2>Contact Form</h2>
             <x-contact-form />
         </section>
-        <div class="skills">
+        {{-- <div class="skills">
             <h2>Skills</h2>
             <ul>
                 <li>JavaScript</li>
@@ -24,7 +24,7 @@
                 <li>React</li>
                 <li>CSS</li>
             </ul>
-        </div>
+        </div> --}}
         <x-social-links />
     </div>
 
