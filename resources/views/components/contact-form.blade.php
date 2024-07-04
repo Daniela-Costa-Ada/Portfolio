@@ -1,4 +1,3 @@
-<!-- resources/views/components/contact-form.blade.php -->
 <form action="{{ route('send.message') }}" method="POST">
     @csrf
     <div class="form-group">
@@ -13,5 +12,7 @@
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="5" required></textarea>
     </div>
-    <button type="submit">Send Message</button>
+    <div class="submit-row">
+        <button type="submit">Send Message</button>
+    </div>
 </form>

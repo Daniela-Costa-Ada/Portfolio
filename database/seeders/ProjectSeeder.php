@@ -18,15 +18,15 @@ class ProjectSeeder extends Seeder
         Project::truncate();
         
         Project::create([
-            'title' => 'Projeto A',
-            'description' => 'Descrição do Projeto A',
-            'url' => 'https://www.projeto-a.com',
+            'title' => 'Projeto Laravel',
+            'description' => 'Descrição do Projeto Laravel',
+            'url' => '',
         ]);
 
         Project::create([
-            'title' => 'Projeto B',
-            'description' => 'Descrição do Projeto B',
-            'url' => 'https://www.projeto-b.com',
+            'title' => 'Projeto Portifolio',
+            'description' => 'Descrição do Projeto Portfolio',
+            'url' => 'https://github.com/Daniela-Costa-Ada/Portfolio',
         ]);
 
         Project::create([
@@ -34,6 +34,96 @@ class ProjectSeeder extends Seeder
             'description' => 'Descrição do Projeto C',
             'url' => 'https://www.projeto-c.com',
         ]);
+        
+        // Project::create([
+        //     'title' => 'Projeto C',
+        //     'description' => 'Descrição do Projeto C',
+        //     'url' => 'https://www.projeto-c.com',
+        // ]);
+
+        // Project::create([
+        //     'title' => 'Projeto C',
+        //     'description' => 'Descrição do Projeto C',
+        //     'url' => 'https://www.projeto-c.com',
+        // ]);
+
+        // Project::create([
+        //     'title' => 'Projeto C',
+        //     'description' => 'Descrição do Projeto C',
+        //     'url' => 'https://www.projeto-c.com',
+        // ]);
+
+        // Project::create([
+        //     'title' => 'Projeto C',
+        //     'description' => 'Descrição do Projeto C',
+        //     'url' => 'https://www.projeto-c.com',
+        // ]);
+
+        // Project::create([
+        //     'title' => 'Projeto C',
+        //     'description' => 'Descrição do Projeto C',
+        //     'url' => 'https://www.projeto-c.com',
+        // ]);
+
+        // Project::create([
+        //     'title' => 'Projeto C',
+        //     'description' => 'Descrição do Projeto C',
+        //     'url' => 'https://www.projeto-c.com',
+        // ]);
+
+        // Project::create([
+        //     'title' => 'Projeto C',
+        //     'description' => 'Descrição do Projeto C',
+        //     'url' => 'https://www.projeto-c.com',
+        // ]);
+
+        // Project::create([
+        //     'title' => 'Projeto C',
+        //     'description' => 'Descrição do Projeto C',
+        //     'url' => 'https://www.projeto-c.com',
+        // ]);
+
+        // Project::create([
+        //     'title' => 'Projeto C',
+        //     'description' => 'Descrição do Projeto C',
+        //     'url' => 'https://www.projeto-c.com',
+        // ]);
+
+        // Project::create([
+        //     'title' => 'Projeto C',
+        //     'description' => 'Descrição do Projeto C',
+        //     'url' => 'https://www.projeto-c.com',
+        // ]);
+
+        // Project::create([
+        //     'title' => 'Projeto C',
+        //     'description' => 'Descrição do Projeto C',
+        //     'url' => 'https://www.projeto-c.com',
+        // ]);
+
+        // Project::create([
+        //     'title' => 'Projeto C',
+        //     'description' => 'Descrição do Projeto C',
+        //     'url' => 'https://www.projeto-c.com',
+        // ]);
+
+        // Project::create([
+        //     'title' => 'Projeto C',
+        //     'description' => 'Descrição do Projeto C',
+        //     'url' => 'https://www.projeto-c.com',
+        // ]);
+
+        // Project::create([
+        //     'title' => 'Projeto C',
+        //     'description' => 'Descrição do Projeto C',
+        //     'url' => 'https://www.projeto-c.com',
+        // ]);
+
+        // Project::create([
+        //     'title' => 'Projeto C',
+        //     'description' => 'Descrição do Projeto C',
+        //     'url' => 'https://www.projeto-c.com',
+        // ]);
 
         $this->command->info('Projetos inseridos com sucesso!');
     }

@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\ProjectController;
 /*
@@ -15,11 +14,8 @@ use App\Http\Controllers\ProjectController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 Route::get('/', [PageController::class, 'home'])->name('home');
-Route::get('/about', [PageController::class, 'about'])->name('about');
+Route::get('/vip', [PageController::class, 'about'])->name('vip');
 Route::get('/services', [PageController::class, 'services'])->name('services');
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 
@@ -28,9 +24,10 @@ Route::post('/send-message', function () {
 })->name('send.message');
 
 
-
-Route::get('api/projects', [ProjectController::class, 'index']);
-Route::post('api/projects', [ProjectController::class, 'store']);
-Route::get('api/projects/{id}', [ProjectController::class, 'show']);
-Route::put('api/projects/{id}', [ProjectController::class, 'update']);
-Route::delete('api/projects/{id}', [ProjectController::class, 'destroy']);
+Route::prefix('api')->group(function () {
+    Route::get('projects', [ProjectController::class, 'index'])->name('api.projects.index');
+    Route::post('projects', [ProjectController::class, 'store'])->name('api.projects.store');
+    Route::get('projects/{id}', [ProjectController::class, 'show'])->name('api.projects.show');
+    Route::put('projects/{id}', [ProjectController::class, 'update'])->name('api.projects.update');
+    Route::delete('projects/{id}', [ProjectController::class, 'destroy'])->name('api.projects.destroy');
+});
